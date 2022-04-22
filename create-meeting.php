@@ -15,11 +15,11 @@ function create_meeting() {
                 "Authorization" => "Bearer $accessToken"
             ],
             'json' => [
-                "topic" => htmlspecialchars($_POST['topic']),
+                "topic" => "БУКВЫ МНОГА БУКВ НАЗВАНИЕ ДЛЯ ВСТРЕЧИ",
                 "type" => 2,
-                "start_time" => htmlspecialchars($_POST['start_time']),
-                "duration" => htmlspecialchars($_POST['duration']),
-                "password" => htmlspecialchars($_POST['password'])
+                "start_time" => "2021-03-05T20:30:00",//ЧТО БЫ РАБОТАЛО ОБЯЗАТЕЛЬНО НУЖНО В ТАКОМ ФОРМАТЕ ПОСТ ЗАПРОС ПЕРЕДАВАТЬ
+                "duration" => "30",
+                "password" => "1111111"
             ],
         ]);
   
